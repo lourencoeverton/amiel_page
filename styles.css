@@ -1,0 +1,110 @@
+body {
+    background-color: #F1E9CC;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.imagem {
+    margin-right: 120px;
+    width: 500px;
+}
+
+.texto {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(116, 49, 5);
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.biografia {
+    text-align: center;
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.biografia p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.biografia h2 {
+    color: rgb(116, 49, 5);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.citação p {
+    text-align: justify;
+    font-style: italic;
+    align-content: center;
+
+
+}
+
+
+
+footer {
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(116, 49, 5);
+    text-align: center;
+}
+
+
+/* Tabelt */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .imagem {
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .texto {
+        font-size: 26px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .biografia {
+        max-width: 90%;
+    }
+}
+
+/* Mobile*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .imagem {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .texto {
+        font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .biografia {
+        max-width: 95%;
+    }
+}
